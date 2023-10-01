@@ -4,35 +4,115 @@
   <title>HumanitZ Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-
-  <!-- Load Leaflet code library: see https://leafletjs.com/download.html -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 
-  <!-- Position the map and title with Cascading Style Sheet (CSS) -->
   <style>
-  body { margin:0; padding:0; }
+  body { margin:0; padding:0; background-color: #403e3e;  }
+  .leaflet-container {background: #403e3e;outline: 0;}
   #map { position: absolute; top:0; bottom:0; right:0; left:0; }
   #map-title { position: relative; margin-top: 10px; margin-left: 50px; float: left; background: white; border: 2px solid rgba(0,0,0,0.2); padding: 6px 8px; font-family: Helvetica; font-weight: bold; font-size: 24px; z-index: 800; }
+  .legend {
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  background: #403e3e;
+  line-height: 24px;
+  color: #fff;
+}
+.legend h4 {
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 12px 8px;
+  color: #777;
+}
+
+.legend span {
+  position: relative;
+  bottom: 3px;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin: 0 8px 0 0;
+  opacity: 0.7;
+}
+
+.legend i.icon {
+  background-size: 18px;
+}
   </style>
 </head>
 <body>
 
-  <div id="map-title">HumanitZ Map</div>
+  <div id="map-title">HumanitZ Map v1</div>
   <div id="map"></div>
   <script>
 
-  var map = L.map('map', {
-  crs: L.CRS.Simple,
-  minZoom: -2,
-  maxZoom: 1
-});
-  var bounds = [xy(0, 0), xy(1440, 1440)]
-  var image = L.imageOverlay('map.jpg', bounds)
-  image.addTo(map);
+	var map = L.map('map', {
+		crs: L.CRS.Simple,
+		minZoom: -5
+	});
+	
+	var bounds = [[0,0], [4096,4096]];
+	var image = L.imageOverlay('images/map.png', bounds).addTo(map);
+	
+	var HZIcon = L.Icon.extend({
+		options: {
+			iconSize:     [24, 24],
+			iconAnchor:   [12, 12],
+			popupAnchor:  [-0, -12]
+		}
+	});
+	
+	L.icon = function (options) {
+		return new L.Icon(options);
+	};
+	
+	var spawnIcon = new HZIcon({iconUrl: 'images/spawnicon.png'});
+	var storeIcon = new HZIcon({iconUrl: 'images/storeicon.png'});
+	
+	map.fitBounds(bounds);
+	
+	L.marker([322, 3239], {icon: spawnIcon}).addTo(map).bindPopup("Start Spawn");
+	L.marker([822, 3930], {icon: spawnIcon}).addTo(map).bindPopup("Coast Road Spawn");
+	L.marker([1325, 3581], {icon: spawnIcon}).addTo(map).bindPopup("Inland Spawn");
+	L.marker([1494, 684], {icon: spawnIcon}).addTo(map).bindPopup("West Road Spawn");
+	L.marker([1466, 2654.75], {icon: storeIcon}).addTo(map).bindPopup("Gun Store");
+	L.marker([1355, 2660.5], {icon: storeIcon}).addTo(map).bindPopup("Auto Parts Store");
+	
+	var circle = L.circle([2552, 952], {
+		color: 'green',
+		fillColor: '#00ff1e',
+		fillOpacity: 0.5,
+		radius: 50
+	}).addTo(map)
+	.bindPopup("Radio Tower");
+	
+	var legend = L.control({ position: "bottomleft" });
 
-  L.marker([41.77, -72.69]).addTo(map)
-  .bindPopup("Test");
+	legend.onAdd = function(map) {
+	  var div = L.DomUtil.create("div", "legend");
+	  div.innerHTML += "<h4>Legend</h4>";
+	  div.innerHTML += '<i class="icon" style="background-image: url(images/spawnicon.png);background-repeat: no-repeat;"></i><span>Spawn Points</span><br>';
+	  div.innerHTML += '<i class="icon" style="background-image: url(images/storeicon.png);background-repeat: no-repeat;"></i><span>Store Locations</span><br>';
+	  div.innerHTML += '<i style="background: #00ff1e"></i><span>Radio Tower</span><br>';
+	  return div;
+	};
+
+	legend.addTo(map);
+	
+	var popup = L.popup();
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent("You clicked the map at " + e.latlng.toString())
+			.openOn(map);
+	}
+
+	map.on('click', onMapClick);
 
   </script>
 </body>
