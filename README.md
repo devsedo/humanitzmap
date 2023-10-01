@@ -1,0 +1,2 @@
+# humanitzmap
+Interactive HumanitZ map
