@@ -23,25 +23,16 @@
   <script>
 
   var map = L.map('map', {
-    center: [41.77, -72.69],
-    zoom: 12,
-    scrollWheelZoom: false
-  });
-
-  L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; StuX'
-  }).addTo(map);
+  crs: L.CRS.Simple,
+  minZoom: -2,
+  maxZoom: 1
+});
+  var bounds = [xy(0, 0), xy(1440, 1440)]
+  var image = L.imageOverlay('map.jpg', bounds)
+  image.addTo(map);
 
   L.marker([41.77, -72.69]).addTo(map)
   .bindPopup("Test");
-
-    var polygon = L.polygon([
-[41.77, -72.69],
-[51.503, -0.06],
-[51.51, -0.047]
-]).addTo(map)
-.bindPopup("Radio Station");
 
   </script>
 </body>
