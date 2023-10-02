@@ -75,6 +75,8 @@
 	var licons = {
 		spawnicon: new HZIcon({ iconUrl: 'images/spawnicon.png' }),
 		storeicon: new HZIcon({ iconUrl: 'images/storeicon.png' }),
+		hospitalicon: new HZIcon({ iconUrl: 'images/hospitalicon.png' }),
+		pumpstationicon: new HZIcon({ iconUrl: 'images/pumpstationicon.png' }),
 	};
 	
 	map.fitBounds(bounds);
@@ -100,20 +102,13 @@
 	  div.innerHTML += "<h4>Legend</h4>";
 	  div.innerHTML += '<i class="icon" style="background-image: url(images/spawnicon.png);background-repeat: no-repeat;"></i><span>Spawn Points</span><br>';
 	  div.innerHTML += '<i class="icon" style="background-image: url(images/storeicon.png);background-repeat: no-repeat;"></i><span>Store Locations</span><br>';
+	  div.innerHTML += '<i class="icon" style="background-image: url(images/hospitalicon.png);background-repeat: no-repeat;"></i><span>Hospital Locations</span><br>';
+	  div.innerHTML += '<i class="icon" style="background-image: url(images/pumpstationicon.png);background-repeat: no-repeat;"></i><span>Pumpstation Locations</span><br>';
 	  div.innerHTML += '<i style="background: #00ff1e"></i><span>Radio Tower</span><br>';
 	  return div;
 	};
 
 	legend.addTo(map);
-	
-	// var popup = L.popup();
-	// function onMapClick(e) {
-	// 	popup
-	// 		.setLatLng(e.latlng)
-	// 		.setContent("You clicked the map at " + e.latlng.toString())
-	// 		.openOn(map);
-	// }
-	// map.on('click', onMapClick);
 
   </script>
 </body>
