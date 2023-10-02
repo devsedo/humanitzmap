@@ -1,0 +1,40 @@
+{
+    "coords": {
+        "spawn1": {
+            "name": "Start Spawn",
+            "icon": "spawnicon",
+            "x": 322,
+            "y": 3239
+        },
+        "spawn2": {
+            "name": "Coast Road Spawn",
+            "icon": "spawnicon",
+            "x": 822,
+            "y": 3930
+        },
+        "spawn3": {
+            "name": "Inland Spawn",
+            "icon": "spawnicon",
+            "x": 1325,
+            "y": 3581
+        },
+        "spawn4": {
+            "name": "West Road Spawn",
+            "icon": "spawnicon",
+            "x": 1494,
+            "y": 684
+        },
+        "gunstore1": {
+            "name": "Gun Store",
+            "icon": "storeicon",
+            "x": 1466,
+            "y": 2654.75
+        },
+        "autopartsstore1": {
+            "name": "Auto Parts Store",
+            "icon": "storeicon",
+            "x": 1355,
+            "y": 2660.5
+        }
+    }
+}

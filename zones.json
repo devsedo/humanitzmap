@@ -1,0 +1,11 @@
+{
+    "coords": {
+        "spawn1": {
+            "name": "Radio Tower",
+            "zbcolor": "green",
+            "zradius": 50,
+            "x": 2552,
+            "y": 952
+        }
+    }
+}

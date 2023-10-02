@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <style>
   body { margin:0; padding:0; background-color: #403e3e;  }
@@ -70,25 +71,27 @@
 		return new L.Icon(options);
 	};
 	
-	var spawnIcon = new HZIcon({iconUrl: 'images/spawnicon.png'});
-	var storeIcon = new HZIcon({iconUrl: 'images/storeicon.png'});
+	
+	var licons = {
+		spawnicon: new HZIcon({ iconUrl: 'images/spawnicon.png' }),
+		storeicon: new HZIcon({ iconUrl: 'images/storeicon.png' }),
+	};
 	
 	map.fitBounds(bounds);
 	
-	L.marker([322, 3239], {icon: spawnIcon}).addTo(map).bindPopup("Start Spawn");
-	L.marker([822, 3930], {icon: spawnIcon}).addTo(map).bindPopup("Coast Road Spawn");
-	L.marker([1325, 3581], {icon: spawnIcon}).addTo(map).bindPopup("Inland Spawn");
-	L.marker([1494, 684], {icon: spawnIcon}).addTo(map).bindPopup("West Road Spawn");
-	L.marker([1466, 2654.75], {icon: storeIcon}).addTo(map).bindPopup("Gun Store");
-	L.marker([1355, 2660.5], {icon: storeIcon}).addTo(map).bindPopup("Auto Parts Store");
-	
-	var circle = L.circle([2552, 952], {
-		color: 'green',
-		fillColor: '#00ff1e',
-		fillOpacity: 0.5,
-		radius: 50
-	}).addTo(map)
-	.bindPopup("Radio Tower");
+	$.getJSON("markers.json", function(hzmakers){
+		for(var key in hzmakers.coords){
+			var latLng = L.latLng([hzmakers.coords[key].x, hzmakers.coords[key].y]);
+			L.marker(latLng, {icon: licons[hzmakers.coords[key].icon]}).addTo(map).bindPopup(hzmakers.coords[key].name)
+		}
+	});
+
+	$.getJSON("zones.json", function(hzzones){
+		for(var key in hzzones.coords){
+			var latLng = L.latLng([hzzones.coords[key].x, hzzones.coords[key].y]);
+			var circle = L.circle(latLng, { color: "green", fillOpacity: 0.5, radius: hzzones.coords[key].zradius}).addTo(map).bindPopup(hzzones.coords[key].name);
+		}
+	});
 	
 	var legend = L.control({ position: "bottomleft" });
 
@@ -103,16 +106,14 @@
 
 	legend.addTo(map);
 	
-	var popup = L.popup();
-
-	<!-- function onMapClick(e) { -->
-		<!-- popup -->
-			<!-- .setLatLng(e.latlng) -->
-			<!-- .setContent("You clicked the map at " + e.latlng.toString()) -->
-			<!-- .openOn(map); -->
-	<!-- } -->
-
-	<!-- map.on('click', onMapClick); -->
+	// var popup = L.popup();
+	// function onMapClick(e) {
+	// 	popup
+	// 		.setLatLng(e.latlng)
+	// 		.setContent("You clicked the map at " + e.latlng.toString())
+	// 		.openOn(map);
+	// }
+	// map.on('click', onMapClick);
 
   </script>
 </body>

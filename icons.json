@@ -1,0 +1,12 @@
+{
+    "icons": {
+        "spawn": {
+            "name": "spawnicon",
+            "imagepath": "images/spawnicon.png"
+        },
+        "store": {
+            "name": "storeicon",
+            "imagepath": "images/storeicon.png"
+        }
+    }
+}
