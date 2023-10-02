@@ -64,7 +64,7 @@
 	
 	var HZIcon = L.Icon.extend({
 		options: {
-			iconSize:     [24, 24],
+			iconSize:     [32, 32],
 			iconAnchor:   [12, 12],
 			popupAnchor:  [-0, -12]
 		}
@@ -79,7 +79,11 @@
 		spawnicon: new HZIcon({ iconUrl: 'images/icons/spawnicon.png' }),
 		storeicon: new HZIcon({ iconUrl: 'images/icons/storeicon.png' }),
 		hospitalicon: new HZIcon({ iconUrl: 'images/icons/hospitalicon.png' }),
+		policestationicon: new HZIcon({ iconUrl: 'images/icons/policestationicon.png' }),
 		pumpstationicon: new HZIcon({ iconUrl: 'images/icons/pumpstationicon.png' }),
+		gunstoreicon: new HZIcon({ iconUrl: 'images/icons/gunstoreicon.png' }),
+		hardwarestoreicon: new HZIcon({ iconUrl: 'images/icons/hardwarestoreicon.png' }),
+		Autopartsstoreicon: new HZIcon({ iconUrl: 'images/icons/Autopartsstoreicon.png' }),
 	};
 	
 	map.fitBounds(bounds);
@@ -105,7 +109,11 @@
 	  div.innerHTML += '<h4>Legend</h4>';
 	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/spawnicon.png);background-repeat: no-repeat;"></i><span>Spawn Points</span><br>';
 	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/storeicon.png);background-repeat: no-repeat;"></i><span>Store Locations</span><br>';
+	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/gunstoreicon.png);background-repeat: no-repeat;"></i><span>Gun Store Locations</span><br>';
+	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/hardwarestoreicon.png);background-repeat: no-repeat;"></i><span>Hardware Store Locations</span><br>';
+	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/Autopartsstoreicon.png);background-repeat: no-repeat;"></i><span>Auto Parts Store Locations</span><br>';
 	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/hospitalicon.png);background-repeat: no-repeat;"></i><span>Hospital Locations</span><br>';
+	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/policestationicon.png);background-repeat: no-repeat;"></i><span>Police Station Locations</span><br>';
 	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/pumpstationicon.png);background-repeat: no-repeat;"></i><span>Pumpstation Locations</span><br>';
 	  div.innerHTML += '<i style="background: #00ff1e"></i><span>Radio Tower</span><br>';
 	  return div;

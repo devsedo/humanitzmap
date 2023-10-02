@@ -26,33 +26,63 @@
         },
         "gunstore1": {
             "name": "Gun Store",
-            "icon": "storeicon",
+            "icon": "gunstoreicon",
             "x": 1466,
             "y": 2654.75
         },
+        "gunstore2": {
+            "name": "Gun Store",
+            "icon": "gunstoreicon",
+            "x": 242.25,
+            "y": 678.75
+        },
         "autopartsstore1": {
             "name": "Auto Parts Store",
-            "icon": "storeicon",
+            "icon": "Autopartsstoreicon",
             "x": 1355,
             "y": 2660.5
         },
         "autopartsstore2": {
             "name": "Auto Parts Store",
-            "icon": "storeicon",
+            "icon": "Autopartsstoreicon",
             "x": 1938,
             "y": 3510
         },
         "autopartsstore3": {
             "name": "Auto Parts Store",
-            "icon": "storeicon",
+            "icon": "Autopartsstoreicon",
             "x": 2517,
             "y": 2076.75
         },
+        "autopartsstore4": {
+            "name": "Auto Parts Store",
+            "icon": "Autopartsstoreicon",
+            "x": 497.863516,
+            "y": 803.765524
+        },
+        "autopartsstore5": {
+            "name": "Auto Parts Store",
+            "icon": "Autopartsstoreicon",
+            "x": 313,
+            "y": 1941
+        },
         "hardwarestore1": {
             "name": "Hardware Store",
-            "icon": "storeicon",
+            "icon": "hardwarestoreicon",
             "x": 2409,
             "y": 1756.5
+        },
+        "hardwarestore2": {
+            "name": "Hardware Store",
+            "icon": "hardwarestoreicon",
+            "x": 1372.75,
+            "y": 805.75
+        },
+        "hardwarestore3": {
+            "name": "Hardware Store",
+            "icon": "hardwarestoreicon",
+            "x": 245,
+            "y": 736
         },
         "supermarkt1": {
             "name": "Supermarkt",
@@ -60,17 +90,41 @@
             "x": 2514.75,
             "y": 1991.25
         },
+        "supermarkt2": {
+            "name": "Supermarkt",
+            "icon": "storeicon",
+            "x": 212.5,
+            "y": 605.75
+        },
         "hospital1": {
             "name": "Hospital",
             "icon": "hospitalicon",
             "x": 2309,
             "y": 2046
         },
+        "policestation1": {
+            "name": "Police Station",
+            "icon": "policestationicon",
+            "x": 2580,
+            "y": 1745
+        },
         "pumpstation1": {
             "name": "Pump Station",
             "icon": "pumpstationicon",
             "x": 2449.5,
             "y": 2094.5
+        },
+        "pumpstation2": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "x": 342,
+            "y": 1857
+        },
+        "trainstation1": {
+            "name": "Train Station",
+            "icon": "storeicon",
+            "x": 596.5,
+            "y": 932
         }
     }
 }
