@@ -60,7 +60,8 @@
 		pumpstationicon: new HZIcon({ iconUrl: 'images/icons/pumpstationicon.png' }),
 		gunstoreicon: new HZIcon({ iconUrl: 'images/icons/gunstoreicon.png' }),
 		hardwarestoreicon: new HZIcon({ iconUrl: 'images/icons/hardwarestoreicon.png' }),
-		Autopartsstoreicon: new HZIcon({ iconUrl: 'images/icons/Autopartsstoreicon.png' }),
+		autopartsstoreicon: new HZIcon({ iconUrl: 'images/icons/Autopartsstoreicon.png' }),
+		outposticon: new HZIcon({ iconUrl: 'images/icons/outposticon.png' }),
 	};
 	
 	map.fitBounds(bounds);
@@ -80,7 +81,7 @@
 	});
 
 	L.control.tagFilterButton({
-        data: ['spawns', 'stores', 'hostpitals','policestations','pumpstations','gunstores','hardwarestores','autopartstores','trainstations'],
+        data: ['spawns', 'stores', 'hostpitals','policestations','pumpstations','gunstores','hardwarestores','autopartstores','trainstations','outposts','militarybases'],
         icon: '<img width="15" src="images/ui/filter.png">',
         filterOnEveryClick: true
     }).addTo( map );
@@ -98,6 +99,7 @@
 	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/hospitalicon.png);background-repeat: no-repeat;"></i><span>Hospital Locations</span><br>';
 	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/policestationicon.png);background-repeat: no-repeat;"></i><span>Police Station Locations</span><br>';
 	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/pumpstationicon.png);background-repeat: no-repeat;"></i><span>Pumpstation Locations</span><br>';
+	  div.innerHTML += '<i class="icon" style="background-image: url(images/icons/outposticon.png);background-repeat: no-repeat;"></i><span>Outpost Locations</span><br>';
 	  div.innerHTML += '<i style="background: #00ff1e"></i><span>Radio Tower</span><br>';
 	  return div;
 	};
