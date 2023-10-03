@@ -184,7 +184,7 @@
         },
         "trainstation1": {
             "name": "Train Station",
-            "icon": "storeicon",
+            "icon": "trainstationicon",
             "tag": "trainstations",
             "x": 596.5,
             "y": 932
