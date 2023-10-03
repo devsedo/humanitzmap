@@ -42,6 +42,13 @@
             "x": 242.25,
             "y": 678.75
         },
+        "gunstore3": {
+            "name": "Gun Store",
+            "icon": "gunstoreicon",
+            "tag": "gunstores",
+            "x": 3339.25,
+            "y": 2757
+        },
         "autopartsstore1": {
             "name": "Auto Parts Store",
             "icon": "Autopartsstoreicon",
@@ -98,6 +105,20 @@
             "x": 245,
             "y": 736
         },
+        "hardwarestore4": {
+            "name": "Hardware Store",
+            "icon": "hardwarestoreicon",
+            "tag": "hardwarestores",
+            "x": 467.5,
+            "y": 2219
+        },
+        "hardwarestore5": {
+            "name": "Hardware Store",
+            "icon": "hardwarestoreicon",
+            "tag": "hardwarestores",
+            "x": 325.375,
+            "y": 3874
+        },
         "supermarkt1": {
             "name": "Supermarkt",
             "icon": "storeicon",
@@ -126,6 +147,13 @@
             "x": 2580,
             "y": 1745
         },
+        "militarybase1": {
+            "name": "militarybase",
+            "icon": "policestationicon",
+            "tag": "militarybase",
+            "x": 2144.5,
+            "y": 2370.5
+        },
         "pumpstation1": {
             "name": "Pump Station",
             "icon": "pumpstationicon",
@@ -140,12 +168,40 @@
             "x": 342,
             "y": 1857
         },
+        "pumpstation3": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 270.625,
+            "y": 3953.5
+        },
+        "pumpstation4": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 3804.875,
+            "y": 3535.5
+        },
         "trainstation1": {
             "name": "Train Station",
             "icon": "storeicon",
             "tag": "trainstations",
             "x": 596.5,
             "y": 932
+        },
+        "outpost1": {
+            "name": "Outpost",
+            "icon": "storeicon",
+            "tag": "outpost",
+            "x": 406.5,
+            "y": 4035.25
+        },
+        "outpost2": {
+            "name": "Outpost",
+            "icon": "storeicon",
+            "tag": "outpost",
+            "x": 3756.25,
+            "y": 2535.5
         }
     }
 }
