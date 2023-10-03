@@ -51,35 +51,35 @@
         },
         "autopartsstore1": {
             "name": "Auto Parts Store",
-            "icon": "Autopartsstoreicon",
+            "icon": "autopartsstoreicon",
             "tag": "autopartstores",
             "x": 1355,
             "y": 2660.5
         },
         "autopartsstore2": {
             "name": "Auto Parts Store",
-            "icon": "Autopartsstoreicon",
+            "icon": "autopartsstoreicon",
             "tag": "autopartstores",
             "x": 1938,
             "y": 3510
         },
         "autopartsstore3": {
             "name": "Auto Parts Store",
-            "icon": "Autopartsstoreicon",
+            "icon": "autopartsstoreicon",
             "tag": "autopartstores",
             "x": 2517,
             "y": 2076.75
         },
         "autopartsstore4": {
             "name": "Auto Parts Store",
-            "icon": "Autopartsstoreicon",
+            "icon": "autopartsstoreicon",
             "tag": "autopartstores",
             "x": 497.863516,
             "y": 803.765524
         },
         "autopartsstore5": {
             "name": "Auto Parts Store",
-            "icon": "Autopartsstoreicon",
+            "icon": "autopartsstoreicon",
             "tag": "autopartstores",
             "x": 313,
             "y": 1941
