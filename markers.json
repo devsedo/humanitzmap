@@ -149,7 +149,7 @@
         },
         "militarybase1": {
             "name": "Military Base",
-            "icon": "policestationicon",
+            "icon": "militarybaseicon",
             "tag": "militarybases",
             "x": 2144.5,
             "y": 2370.5
