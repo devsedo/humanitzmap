@@ -30,15 +30,14 @@
   <script>
 
 	var dcords = false;
-
 	var map = L.map('map', {
 		crs: L.CRS.Simple,
 		minZoom: -5
 	});
+	map.attributionControl.addAttribution('| Version: 0.1.16 | &copy; <a href="https://discordapp.com/users/101803195277271040">StuX</a>');
 	
 	var bounds = [[0,0], [4096,4096]];
 	var image = L.imageOverlay('images/map/map.png', bounds).addTo(map);
-	
 	var HZIcon = L.Icon.extend({
 		options: {
 			iconSize:     [32, 32],
@@ -50,7 +49,6 @@
 	L.icon = function (options) {
 		return new L.Icon(options);
 	};
-	
 	
 	var licons = {
 		spawnicon: new HZIcon({ iconUrl: 'images/icons/spawnicon.png' }),
@@ -64,7 +62,6 @@
 		outposticon: new HZIcon({ iconUrl: 'images/icons/outposticon.png' }),
 		militarybaseicon: new HZIcon({ iconUrl: 'images/icons/militarybaseicon.png' }),
 	};
-	
 	map.fitBounds(bounds);
 	
 	$.getJSON("markers.json", function(hzmakers){
