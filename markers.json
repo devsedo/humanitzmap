@@ -150,7 +150,7 @@
         "militarybase1": {
             "name": "militarybase",
             "icon": "policestationicon",
-            "tag": "militarybase",
+            "tag": "militarybases",
             "x": 2144.5,
             "y": 2370.5
         },
@@ -191,15 +191,15 @@
         },
         "outpost1": {
             "name": "Outpost",
-            "icon": "storeicon",
-            "tag": "outpost",
+            "icon": "outposticon",
+            "tag": "outposts",
             "x": 406.5,
             "y": 4035.25
         },
         "outpost2": {
             "name": "Outpost",
-            "icon": "storeicon",
-            "tag": "outpost",
+            "icon": "outposticon",
+            "tag": "outposts",
             "x": 3756.25,
             "y": 2535.5
         }
