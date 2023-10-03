@@ -3,66 +3,77 @@
         "spawn1": {
             "name": "Start Spawn",
             "icon": "spawnicon",
+            "tag": "spawns",
             "x": 322,
             "y": 3239
         },
         "spawn2": {
             "name": "Coast Road Spawn",
             "icon": "spawnicon",
+            "tag": "spawns",
             "x": 822,
             "y": 3930
         },
         "spawn3": {
             "name": "Inland Spawn",
             "icon": "spawnicon",
+            "tag": "spawns",
             "x": 1325,
             "y": 3581
         },
         "spawn4": {
             "name": "West Road Spawn",
             "icon": "spawnicon",
+            "tag": "spawns",
             "x": 1494,
             "y": 684
         },
         "gunstore1": {
             "name": "Gun Store",
             "icon": "gunstoreicon",
+            "tag": "gunstores",
             "x": 1466,
             "y": 2654.75
         },
         "gunstore2": {
             "name": "Gun Store",
             "icon": "gunstoreicon",
+            "tag": "gunstores",
             "x": 242.25,
             "y": 678.75
         },
         "autopartsstore1": {
             "name": "Auto Parts Store",
             "icon": "Autopartsstoreicon",
+            "tag": "autopartstores",
             "x": 1355,
             "y": 2660.5
         },
         "autopartsstore2": {
             "name": "Auto Parts Store",
             "icon": "Autopartsstoreicon",
+            "tag": "autopartstores",
             "x": 1938,
             "y": 3510
         },
         "autopartsstore3": {
             "name": "Auto Parts Store",
             "icon": "Autopartsstoreicon",
+            "tag": "autopartstores",
             "x": 2517,
             "y": 2076.75
         },
         "autopartsstore4": {
             "name": "Auto Parts Store",
             "icon": "Autopartsstoreicon",
+            "tag": "autopartstores",
             "x": 497.863516,
             "y": 803.765524
         },
         "autopartsstore5": {
             "name": "Auto Parts Store",
             "icon": "Autopartsstoreicon",
+            "tag": "autopartstores",
             "x": 313,
             "y": 1941
         },
@@ -75,54 +86,63 @@
         "hardwarestore2": {
             "name": "Hardware Store",
             "icon": "hardwarestoreicon",
+            "tag": "hardwarestores",
             "x": 1372.75,
             "y": 805.75
         },
         "hardwarestore3": {
             "name": "Hardware Store",
             "icon": "hardwarestoreicon",
+            "tag": "hardwarestores",
             "x": 245,
             "y": 736
         },
         "supermarkt1": {
             "name": "Supermarkt",
             "icon": "storeicon",
+            "tag": "stores",
             "x": 2514.75,
             "y": 1991.25
         },
         "supermarkt2": {
             "name": "Supermarkt",
             "icon": "storeicon",
+            "tag": "stores",
             "x": 212.5,
             "y": 605.75
         },
         "hospital1": {
             "name": "Hospital",
             "icon": "hospitalicon",
+            "tag": "hostpitals",
             "x": 2309,
             "y": 2046
         },
         "policestation1": {
             "name": "Police Station",
             "icon": "policestationicon",
+            "tag": "policestations",
             "x": 2580,
             "y": 1745
         },
         "pumpstation1": {
             "name": "Pump Station",
             "icon": "pumpstationicon",
+            "tag": "pumpstations",
             "x": 2449.5,
             "y": 2094.5
         },
         "pumpstation2": {
             "name": "Pump Station",
             "icon": "pumpstationicon",
+            "tag": "pumpstations",
             "x": 342,
             "y": 1857
         },
         "trainstation1": {
             "name": "Train Station",
             "icon": "storeicon",
+            "tag": "trainstations",
             "x": 596.5,
             "y": 932
         }

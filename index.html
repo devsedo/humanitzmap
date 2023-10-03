@@ -4,46 +4,23 @@
   <title>HumanitZ Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="/js/easy-button.js"></script>
+  <script type="text/javascript" src="js/leaflet-tag-filter-button.js"></script>
+  <link rel="stylesheet" href="css/leaflet-easy-button.css" />
+  <link rel="stylesheet" href="css/leaflet-tag-filter-button.css" />
 
   <style>
-  body { margin:0; padding:0; background-color: #403e3e;  }
-  .leaflet-container {background: #403e3e;outline: 0;}
-  #map { position: absolute; top:0; bottom:0; right:0; left:0; }
-  #map-title { position: relative; margin-top: 15px; margin-left: 50px; float: left; background-image: url(images/ui/boxes.png); padding: 10px 10px; font-family: Helvetica; font-weight: thin; font-size: 24px; z-index: 800; color: #fff;}
-  #map-title a { color: #fff; text-decoration: none;}
-  
-  .legend {
-  font: 14px Arial, Helvetica, sans-serif;
-  width: 250px;
-  line-height: 24px;
-  color: #fff;
-}
-.legend h4 {
-  text-align: center;
-  font-size: 16px;
-  margin: 0px 0px 0px;
-  color: #fff;
-}
-.legend span {
-  position: relative;
-  bottom: 3px;
-}
-.legend i {
-  width: 18px;
-  height: 18px;
-  left: 10px;
-  float: left;
-  margin: 0 8px 0 0;
-  opacity: 0.7;
-}
-
-.legend i.icon {
-  background-size: 18px;
-}
+	body,html { margin:0; padding:0; background-color: #403e3e; }
+	.leaflet-container {background: #403e3e;outline: 0;}
+	#map { position: absolute; top:0; bottom:0; right:0; left:0; }
+	#map-title { position: relative; margin-top: 15px; margin-left: 50px; float: left; background-image: url(images/ui/boxes.png); padding: 10px 10px; font-family: Helvetica; font-weight: thin; font-size: 24px; z-index: 800; color: #fff;}
+	#map-title a { color: #fff; text-decoration: none;}
   </style>
+
 </head>
 <body>
 
@@ -91,7 +68,7 @@
 	$.getJSON("markers.json", function(hzmakers){
 		for(var key in hzmakers.coords){
 			var latLng = L.latLng([hzmakers.coords[key].x, hzmakers.coords[key].y]);
-			L.marker(latLng, {icon: licons[hzmakers.coords[key].icon]}).addTo(map).bindPopup(hzmakers.coords[key].name)
+			L.marker(latLng, {icon: licons[hzmakers.coords[key].icon], tags: [hzmakers.coords[key].tag]}).addTo(map).bindPopup(hzmakers.coords[key].name);
 		}
 	});
 
@@ -101,6 +78,12 @@
 			var circle = L.circle(latLng, { color: "green", fillOpacity: 0.5, radius: hzzones.coords[key].zradius}).addTo(map).bindPopup(hzzones.coords[key].name);
 		}
 	});
+
+	L.control.tagFilterButton({
+        data: ['spawns', 'stores', 'hostpitals','policestations','pumpstations','gunstores','hardwarestores','autopartstores','trainstations'],
+        icon: '<img width="15" src="images/ui/filter.png">',
+        filterOnEveryClick: true
+    }).addTo( map );
 	
 	var legend = L.control({ position: "bottomleft" });
 
