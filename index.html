@@ -33,15 +33,15 @@
 		crs: L.CRS.Simple,
 		minZoom: -5
 	});
-	map.attributionControl.addAttribution('| Version: 0.1.16 | &copy; <a href="https://discordapp.com/users/101803195277271040">StuX</a>');
+	map.attributionControl.addAttribution('| Version: 0.1.17 | &copy; <a href="https://discordapp.com/users/101803195277271040">StuX</a>');
 	
 	var bounds = [[0,0], [4096,4096]];
 	var image = L.imageOverlay('images/map/map.png', bounds).addTo(map);
 	var HZIcon = L.Icon.extend({
 		options: {
-			iconSize:     [32, 32],
-			iconAnchor:   [12, 12],
-			popupAnchor:  [-0, -12]
+			iconSize:     [48, 48],
+			iconAnchor:   [24, 48],
+			popupAnchor:  [-0, -24]
 		}
 	});
 	
