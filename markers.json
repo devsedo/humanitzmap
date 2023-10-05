@@ -84,6 +84,13 @@
             "x": 313,
             "y": 1941
         },
+        "autopartsstore6": {
+            "name": "Auto Parts Store",
+            "icon": "autopartsstoreicon",
+            "tag": "autopartstores",
+            "x": 3211,
+            "y": 2766
+        },
         "hardwarestore1": {
             "name": "Hardware Store",
             "icon": "hardwarestoreicon",
