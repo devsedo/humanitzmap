@@ -189,6 +189,13 @@
             "x": 3804.875,
             "y": 3535.5
         },
+        "pumpstation5": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 1440.5,
+            "y": 2721.5
+        },
         "trainstation1": {
             "name": "Train Station",
             "icon": "trainstationicon",
