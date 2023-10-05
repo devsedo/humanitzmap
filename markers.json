@@ -119,6 +119,13 @@
             "x": 325.375,
             "y": 3874
         },
+        "hardwarestore6": {
+            "name": "Hardware Store",
+            "icon": "hardwarestoreicon",
+            "tag": "hardwarestores",
+            "x": 1058,
+            "y": 270
+        },
         "supermarkt1": {
             "name": "Supermarkt",
             "icon": "storeicon",
