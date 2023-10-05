@@ -147,6 +147,13 @@
             "x": 212.5,
             "y": 605.75
         },
+        "supermarkt3": {
+            "name": "Supermarkt",
+            "icon": "storeicon",
+            "tag": "stores",
+            "x": 2597.75,
+            "y": 550.25
+        },
         "hospital1": {
             "name": "Hospital",
             "icon": "hospitalicon",
@@ -203,6 +210,27 @@
             "x": 1440.5,
             "y": 2721.5
         },
+        "pumpstation6": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 3630.75,
+            "y": 671.5
+        },
+        "pumpstation7": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 2664.875,
+            "y": 495.5
+        },
+        "pumpstation8": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 641,
+            "y": 1138.75
+        },
         "trainstation1": {
             "name": "Train Station",
             "icon": "trainstationicon",
@@ -230,6 +258,20 @@
             "tag": "outposts",
             "x": 1146.5,
             "y": 2701
+        },
+        "outpost4": {
+            "name": "Outpost",
+            "icon": "outposticon",
+            "tag": "outposts",
+            "x": 1726,
+            "y": 1231
+        },
+        "outpost5": {
+            "name": "Outpost",
+            "icon": "outposticon",
+            "tag": "outposts",
+            "x": 1655,
+            "y": 1736
         }
     }
 }
