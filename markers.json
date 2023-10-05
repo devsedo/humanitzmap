@@ -209,6 +209,13 @@
             "tag": "outposts",
             "x": 3756.25,
             "y": 2535.5
+        },
+        "outpost3": {
+            "name": "Outpost",
+            "icon": "outposticon",
+            "tag": "outposts",
+            "x": 1146.5,
+            "y": 2701
         }
     }
 }
