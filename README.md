@@ -7,4 +7,5 @@ https://ev0lv3.github.io/humanitzmap/
 <details>
   <summary>V0.1.17</summary>
   - New icons (To make it a bit clearer.) 
+  - New map image
 </details>
