@@ -189,13 +189,6 @@
             "x": 2580,
             "y": 1745
         },
-        "policestation2": {
-            "name": "Police Station",
-            "icon": "policestationicon",
-            "tag": "policestations",
-            "x": 942,
-            "y": 446
-        },
         "militarybase1": {
             "name": "Military Base",
             "icon": "militarybaseicon",
