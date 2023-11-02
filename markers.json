@@ -49,6 +49,13 @@
             "x": 3339.25,
             "y": 2757
         },
+        "gunstore4": {
+            "name": "Gun Store",
+            "icon": "gunstoreicon",
+            "tag": "gunstores",
+            "x": 463.25,
+            "y": 2106.25
+        },
         "autopartsstore1": {
             "name": "Auto Parts Store",
             "icon": "autopartsstoreicon",
@@ -90,6 +97,20 @@
             "tag": "autopartstores",
             "x": 3211,
             "y": 2766
+        },
+        "autopartsstore7": {
+            "name": "Auto Parts Store",
+            "icon": "autopartsstoreicon",
+            "tag": "autopartstores",
+            "x": 2416,
+            "y": 1452
+        },
+        "autopartsstore8": {
+            "name": "Auto Parts Store",
+            "icon": "autopartsstoreicon",
+            "tag": "autopartstores",
+            "x": 2413.023909,
+            "y": 1447.213144
         },
         "hardwarestore1": {
             "name": "Hardware Store",
@@ -168,6 +189,13 @@
             "x": 2580,
             "y": 1745
         },
+        "policestation2": {
+            "name": "Police Station",
+            "icon": "policestationicon",
+            "tag": "policestations",
+            "x": 942,
+            "y": 446
+        },
         "militarybase1": {
             "name": "Military Base",
             "icon": "militarybaseicon",
@@ -231,12 +259,47 @@
             "x": 641,
             "y": 1138.75
         },
+        "pumpstation9": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 942,
+            "y": 446
+        },
+        "pumpstation10": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 298,
+            "y": 714
+        },
+        "pumpstation11": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 2399.5,
+            "y": 1483.5
+        },
+        "pumpstation12": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 2400.514355,
+            "y": 1483.590672
+        },
         "trainstation1": {
             "name": "Train Station",
             "icon": "trainstationicon",
             "tag": "trainstations",
             "x": 596.5,
             "y": 932
+        },
+        "trainstation2": {
+            "name": "RV Spawn location",
+            "icon": "trainstationicon",
+            "tag": "trainstations",
+            "x": 3691,
+            "y": 3332
         },
         "outpost1": {
             "name": "Outpost",
@@ -272,6 +335,34 @@
             "tag": "outposts",
             "x": 1655,
             "y": 1736
+        },
+        "outpost6": {
+            "name": "Outpost",
+            "icon": "outposticon",
+            "tag": "outposts",
+            "x": 767.5,
+            "y": 3421.25
+        },
+        "outpost7": {
+            "name": "Outpost",
+            "icon": "outposticon",
+            "tag": "outposts",
+            "x": 3955.75,
+            "y": 3485.5
+        },
+        "outpost8": {
+            "name": "Outpost",
+            "icon": "outposticon",
+            "tag": "outposts",
+            "x": 2093.503342,
+            "y": 2096.300061
+        },
+        "outpost9": {
+            "name": "Outpost",
+            "icon": "outposticon",
+            "tag": "outposts",
+            "x": 2056,
+            "y": 2103
         }
     }
 }
