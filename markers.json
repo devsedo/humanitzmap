@@ -189,6 +189,13 @@
             "x": 2580,
             "y": 1745
         },
+        "policestation2": {
+            "name": "Police Station",
+            "icon": "policestationicon",
+            "tag": "policestations",
+            "x": 934,
+            "y": 460
+        },
         "militarybase1": {
             "name": "Military Base",
             "icon": "militarybaseicon",
@@ -279,6 +286,13 @@
             "tag": "pumpstations",
             "x": 2400.514355,
             "y": 1483.590672
+        },
+        "pumpstation13": {
+            "name": "Pump Station",
+            "icon": "pumpstationicon",
+            "tag": "pumpstations",
+            "x": 1100,
+            "y": 456
         },
         "trainstation1": {
             "name": "Train Station",
